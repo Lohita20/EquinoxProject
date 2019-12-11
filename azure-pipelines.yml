@@ -30,7 +30,7 @@ steps:
   displayName: 'Build solution'
   inputs:
     solution: '$(Parameters.solution)'
-    vsVersion: 16.0
+    vsVersion: latest
     msbuildArgs: '/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:PackageLocation="$(build.artifactstagingdirectory)\\"'
     platform: '$(BuildPlatform)'
     configuration: '$(BuildConfiguration)'
